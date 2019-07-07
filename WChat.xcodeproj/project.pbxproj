@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0C92552A8526D6C99761D7C0 /* Pods_WChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C046CC33C62355FF35343B18 /* Pods_WChat.framework */; };
+		DF4EF13722D1E153007CC9AF /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4EF13622D1E153007CC9AF /* MainNavigationController.swift */; };
+		DF4EF13B22D1E2D7007CC9AF /* ConversationSearchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4EF13A22D1E2D7007CC9AF /* ConversationSearchResultController.swift */; };
+		DF4EF14222D1E551007CC9AF /* ConversationController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4EF14122D1E551007CC9AF /* ConversationController+UITableView.swift */; };
+		DF4EF14422D1E571007CC9AF /* ConversationController+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4EF14322D1E571007CC9AF /* ConversationController+Search.swift */; };
+		DF4EF14722D1E5B0007CC9AF /* ConversationController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4EF14622D1E5B0007CC9AF /* ConversationController+View.swift */; };
 		DFB111AC22BA53E300A802FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB111AB22BA53E300A802FF /* AppDelegate.swift */; };
-		DFB111AE22BA53E300A802FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB111AD22BA53E300A802FF /* ViewController.swift */; };
+		DFB111AE22BA53E300A802FF /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB111AD22BA53E300A802FF /* ConversationViewController.swift */; };
 		DFB111B122BA53E300A802FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB111AF22BA53E300A802FF /* Main.storyboard */; };
 		DFB111B322BA53E400A802FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB111B222BA53E400A802FF /* Assets.xcassets */; };
 		DFB111B622BA53E400A802FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB111B422BA53E400A802FF /* LaunchScreen.storyboard */; };
@@ -19,9 +24,18 @@
 		0295CA804C2A08EE1434800D /* Pods-WChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-WChat/Pods-WChat.release.xcconfig"; sourceTree = "<group>"; };
 		8324DB3701F4BB34EF47B807 /* Pods-WChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WChat/Pods-WChat.debug.xcconfig"; sourceTree = "<group>"; };
 		C046CC33C62355FF35343B18 /* Pods_WChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF4EF13322D1E04C007CC9AF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		DF4EF13422D1E04C007CC9AF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		DF4EF13622D1E153007CC9AF /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		DF4EF13A22D1E2D7007CC9AF /* ConversationSearchResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationSearchResultController.swift; sourceTree = "<group>"; };
+		DF4EF13C22D1E3C5007CC9AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		DF4EF13D22D1E3C5007CC9AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		DF4EF14122D1E551007CC9AF /* ConversationController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConversationController+UITableView.swift"; sourceTree = "<group>"; };
+		DF4EF14322D1E571007CC9AF /* ConversationController+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConversationController+Search.swift"; sourceTree = "<group>"; };
+		DF4EF14622D1E5B0007CC9AF /* ConversationController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConversationController+View.swift"; sourceTree = "<group>"; };
 		DFB111A822BA53E300A802FF /* WChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB111AB22BA53E300A802FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DFB111AD22BA53E300A802FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DFB111AD22BA53E300A802FF /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		DFB111B022BA53E300A802FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFB111B222BA53E400A802FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFB111B522BA53E400A802FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +71,79 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DF4EF13522D1E064007CC9AF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DF4EF13822D1E1F7007CC9AF /* Storyboard */,
+				DFB111AB22BA53E300A802FF /* AppDelegate.swift */,
+				DFB111B222BA53E400A802FF /* Assets.xcassets */,
+				DFB111B722BA53E400A802FF /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DF4EF13822D1E1F7007CC9AF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DFB111AF22BA53E300A802FF /* Main.storyboard */,
+				DFB111B422BA53E400A802FF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DF4EF13922D1E266007CC9AF /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				DF4EF13F22D1E51B007CC9AF /* Base */,
+				DF4EF13E22D1E50F007CC9AF /* Conversation */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		DF4EF13E22D1E50F007CC9AF /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				DF4EF14922D1E644007CC9AF /* Controller */,
+				DF4EF14822D1E639007CC9AF /* View */,
+				DF4EF14522D1E58B007CC9AF /* Search */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		DF4EF13F22D1E51B007CC9AF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DF4EF13622D1E153007CC9AF /* MainNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DF4EF14522D1E58B007CC9AF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DF4EF14322D1E571007CC9AF /* ConversationController+Search.swift */,
+				DF4EF13A22D1E2D7007CC9AF /* ConversationSearchResultController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		DF4EF14822D1E639007CC9AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF4EF14622D1E5B0007CC9AF /* ConversationController+View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF4EF14922D1E644007CC9AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DFB111AD22BA53E300A802FF /* ConversationViewController.swift */,
+				DF4EF14122D1E551007CC9AF /* ConversationController+UITableView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		DFB1119F22BA53E300A802FF = {
 			isa = PBXGroup;
 			children = (
@@ -78,12 +165,8 @@
 		DFB111AA22BA53E300A802FF /* WChat */ = {
 			isa = PBXGroup;
 			children = (
-				DFB111AB22BA53E300A802FF /* AppDelegate.swift */,
-				DFB111AD22BA53E300A802FF /* ViewController.swift */,
-				DFB111AF22BA53E300A802FF /* Main.storyboard */,
-				DFB111B222BA53E400A802FF /* Assets.xcassets */,
-				DFB111B422BA53E400A802FF /* LaunchScreen.storyboard */,
-				DFB111B722BA53E400A802FF /* Info.plist */,
+				DF4EF13922D1E266007CC9AF /* Module */,
+				DF4EF13522D1E064007CC9AF /* Resource */,
 			);
 			path = WChat;
 			sourceTree = "<group>";
@@ -130,8 +213,9 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				"zh-Hans",
+				en,
 			);
 			mainGroup = DFB1119F22BA53E300A802FF;
 			productRefGroup = DFB111A922BA53E300A802FF /* Products */;
@@ -204,8 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFB111AE22BA53E300A802FF /* ViewController.swift in Sources */,
+				DF4EF14222D1E551007CC9AF /* ConversationController+UITableView.swift in Sources */,
+				DF4EF13722D1E153007CC9AF /* MainNavigationController.swift in Sources */,
+				DF4EF14422D1E571007CC9AF /* ConversationController+Search.swift in Sources */,
+				DFB111AE22BA53E300A802FF /* ConversationViewController.swift in Sources */,
+				DF4EF14722D1E5B0007CC9AF /* ConversationController+View.swift in Sources */,
 				DFB111AC22BA53E300A802FF /* AppDelegate.swift in Sources */,
+				DF4EF13B22D1E2D7007CC9AF /* ConversationSearchResultController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +305,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				DFB111B022BA53E300A802FF /* Base */,
+				DF4EF13322D1E04C007CC9AF /* zh-Hans */,
+				DF4EF13C22D1E3C5007CC9AF /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -224,6 +315,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				DFB111B522BA53E400A802FF /* Base */,
+				DF4EF13422D1E04C007CC9AF /* zh-Hans */,
+				DF4EF13D22D1E3C5007CC9AF /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -235,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -296,6 +390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -354,7 +449,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83LX8MTQKZ;
-				INFOPLIST_FILE = WChat/Info.plist;
+				INFOPLIST_FILE = WChat/Resource/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -374,7 +469,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83LX8MTQKZ;
-				INFOPLIST_FILE = WChat/Info.plist;
+				INFOPLIST_FILE = WChat/Resource/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

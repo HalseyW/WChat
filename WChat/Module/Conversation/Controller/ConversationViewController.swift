@@ -8,13 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ConversationViewController: UITableViewController {
+    let data = ["1", "2", "3", "4", "5", "6"]
+    var searchController: UISearchController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        initView()
     }
 
-
 }
+
+
+
 
