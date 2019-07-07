@@ -13,6 +13,9 @@
 		DF4EF14222D1E551007CC9AF /* ConversationController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4EF14122D1E551007CC9AF /* ConversationController+UITableView.swift */; };
 		DF4EF14422D1E571007CC9AF /* ConversationController+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4EF14322D1E571007CC9AF /* ConversationController+Search.swift */; };
 		DF4EF14722D1E5B0007CC9AF /* ConversationController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4EF14622D1E5B0007CC9AF /* ConversationController+View.swift */; };
+		DF4EF14F22D1E83A007CC9AF /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4EF14E22D1E83A007CC9AF /* Conversation.swift */; };
+		DF4EF15122D1EA93007CC9AF /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4EF15022D1EA93007CC9AF /* ConversationTableViewCell.swift */; };
+		DF4EF15422D1EB9A007CC9AF /* UIColor+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4EF15322D1EB9A007CC9AF /* UIColor+Color.swift */; };
 		DFB111AC22BA53E300A802FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB111AB22BA53E300A802FF /* AppDelegate.swift */; };
 		DFB111AE22BA53E300A802FF /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB111AD22BA53E300A802FF /* ConversationViewController.swift */; };
 		DFB111B122BA53E300A802FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB111AF22BA53E300A802FF /* Main.storyboard */; };
@@ -33,6 +36,9 @@
 		DF4EF14122D1E551007CC9AF /* ConversationController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConversationController+UITableView.swift"; sourceTree = "<group>"; };
 		DF4EF14322D1E571007CC9AF /* ConversationController+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConversationController+Search.swift"; sourceTree = "<group>"; };
 		DF4EF14622D1E5B0007CC9AF /* ConversationController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConversationController+View.swift"; sourceTree = "<group>"; };
+		DF4EF14E22D1E83A007CC9AF /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		DF4EF15022D1EA93007CC9AF /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
+		DF4EF15322D1EB9A007CC9AF /* UIColor+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Color.swift"; sourceTree = "<group>"; };
 		DFB111A822BA53E300A802FF /* WChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB111AB22BA53E300A802FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFB111AD22BA53E300A802FF /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
@@ -103,9 +109,7 @@
 		DF4EF13E22D1E50F007CC9AF /* Conversation */ = {
 			isa = PBXGroup;
 			children = (
-				DF4EF14922D1E644007CC9AF /* Controller */,
-				DF4EF14822D1E639007CC9AF /* View */,
-				DF4EF14522D1E58B007CC9AF /* Search */,
+				DF4EF14A22D1E7C4007CC9AF /* Module */,
 			);
 			path = Conversation;
 			sourceTree = "<group>";
@@ -118,19 +122,11 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		DF4EF14522D1E58B007CC9AF /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				DF4EF14322D1E571007CC9AF /* ConversationController+Search.swift */,
-				DF4EF13A22D1E2D7007CC9AF /* ConversationSearchResultController.swift */,
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
 		DF4EF14822D1E639007CC9AF /* View */ = {
 			isa = PBXGroup;
 			children = (
 				DF4EF14622D1E5B0007CC9AF /* ConversationController+View.swift */,
+				DF4EF15022D1EA93007CC9AF /* ConversationTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,6 +138,50 @@
 				DF4EF14122D1E551007CC9AF /* ConversationController+UITableView.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		DF4EF14A22D1E7C4007CC9AF /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				DF4EF14B22D1E7CE007CC9AF /* Main */,
+				DF4EF14C22D1E7D3007CC9AF /* Search */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		DF4EF14B22D1E7CE007CC9AF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DF4EF14922D1E644007CC9AF /* Controller */,
+				DF4EF14D22D1E816007CC9AF /* Model */,
+				DF4EF14822D1E639007CC9AF /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DF4EF14C22D1E7D3007CC9AF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DF4EF14322D1E571007CC9AF /* ConversationController+Search.swift */,
+				DF4EF13A22D1E2D7007CC9AF /* ConversationSearchResultController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		DF4EF14D22D1E816007CC9AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF4EF14E22D1E83A007CC9AF /* Conversation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF4EF15222D1EB76007CC9AF /* Constans */ = {
+			isa = PBXGroup;
+			children = (
+				DF4EF15322D1EB9A007CC9AF /* UIColor+Color.swift */,
+			);
+			path = Constans;
 			sourceTree = "<group>";
 		};
 		DFB1119F22BA53E300A802FF = {
@@ -166,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				DF4EF13922D1E266007CC9AF /* Module */,
+				DF4EF15222D1EB76007CC9AF /* Constans */,
 				DF4EF13522D1E064007CC9AF /* Resource */,
 			);
 			path = WChat;
@@ -288,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF4EF14F22D1E83A007CC9AF /* Conversation.swift in Sources */,
 				DF4EF14222D1E551007CC9AF /* ConversationController+UITableView.swift in Sources */,
 				DF4EF13722D1E153007CC9AF /* MainNavigationController.swift in Sources */,
 				DF4EF14422D1E571007CC9AF /* ConversationController+Search.swift in Sources */,
@@ -295,6 +337,8 @@
 				DF4EF14722D1E5B0007CC9AF /* ConversationController+View.swift in Sources */,
 				DFB111AC22BA53E300A802FF /* AppDelegate.swift in Sources */,
 				DF4EF13B22D1E2D7007CC9AF /* ConversationSearchResultController.swift in Sources */,
+				DF4EF15122D1EA93007CC9AF /* ConversationTableViewCell.swift in Sources */,
+				DF4EF15422D1EB9A007CC9AF /* UIColor+Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

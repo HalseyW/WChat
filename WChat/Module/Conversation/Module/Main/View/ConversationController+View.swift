@@ -13,7 +13,8 @@ extension ConversationViewController {
     func initView() {
         initNavigationItem()
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(ConversationTableViewCell.self, forCellReuseIdentifier: "ConversationTableViewCell")
+        tableView.estimatedRowHeight = 60
     }
     
     func initNavigationItem() {
@@ -26,8 +27,8 @@ extension ConversationViewController {
     func initSeachController() {
         searchController = UISearchController(searchResultsController: ConversationSearchResultController())
         searchController.searchResultsUpdater = self
-        self.navigationItem.searchController = searchController
         
+        self.navigationItem.searchController = searchController
         self.definesPresentationContext = true
     }
     
