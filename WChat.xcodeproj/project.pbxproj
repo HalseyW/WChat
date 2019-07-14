@@ -16,6 +16,9 @@
 		DF4EF14F22D1E83A007CC9AF /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4EF14E22D1E83A007CC9AF /* Conversation.swift */; };
 		DF4EF15122D1EA93007CC9AF /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4EF15022D1EA93007CC9AF /* ConversationTableViewCell.swift */; };
 		DF4EF15422D1EB9A007CC9AF /* UIColor+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4EF15322D1EB9A007CC9AF /* UIColor+Color.swift */; };
+		DF937D1922DB2346000CAA60 /* ConversationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF937D1822DB2346000CAA60 /* ConversationListViewModel.swift */; };
+		DF937D1B22DB239D000CAA60 /* ConversationListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF937D1A22DB239D000CAA60 /* ConversationListViewModelProtocol.swift */; };
+		DF937D1D22DB23E6000CAA60 /* ConversationController+ListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF937D1C22DB23E6000CAA60 /* ConversationController+ListViewModelProtocol.swift */; };
 		DFB111AC22BA53E300A802FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB111AB22BA53E300A802FF /* AppDelegate.swift */; };
 		DFB111AE22BA53E300A802FF /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB111AD22BA53E300A802FF /* ConversationViewController.swift */; };
 		DFB111B122BA53E300A802FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB111AF22BA53E300A802FF /* Main.storyboard */; };
@@ -39,6 +42,9 @@
 		DF4EF14E22D1E83A007CC9AF /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 		DF4EF15022D1EA93007CC9AF /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
 		DF4EF15322D1EB9A007CC9AF /* UIColor+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Color.swift"; sourceTree = "<group>"; };
+		DF937D1822DB2346000CAA60 /* ConversationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListViewModel.swift; sourceTree = "<group>"; };
+		DF937D1A22DB239D000CAA60 /* ConversationListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListViewModelProtocol.swift; sourceTree = "<group>"; };
+		DF937D1C22DB23E6000CAA60 /* ConversationController+ListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConversationController+ListViewModelProtocol.swift"; sourceTree = "<group>"; };
 		DFB111A822BA53E300A802FF /* WChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB111AB22BA53E300A802FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFB111AD22BA53E300A802FF /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +142,7 @@
 			children = (
 				DFB111AD22BA53E300A802FF /* ConversationViewController.swift */,
 				DF4EF14122D1E551007CC9AF /* ConversationController+UITableView.swift */,
+				DF937D1C22DB23E6000CAA60 /* ConversationController+ListViewModelProtocol.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -153,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				DF4EF14922D1E644007CC9AF /* Controller */,
+				DF937D1722DB232A000CAA60 /* ViewModel */,
 				DF4EF14D22D1E816007CC9AF /* Model */,
 				DF4EF14822D1E639007CC9AF /* View */,
 			);
@@ -182,6 +190,15 @@
 				DF4EF15322D1EB9A007CC9AF /* UIColor+Color.swift */,
 			);
 			path = Constans;
+			sourceTree = "<group>";
+		};
+		DF937D1722DB232A000CAA60 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DF937D1822DB2346000CAA60 /* ConversationListViewModel.swift */,
+				DF937D1A22DB239D000CAA60 /* ConversationListViewModelProtocol.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		DFB1119F22BA53E300A802FF = {
@@ -334,7 +351,10 @@
 				DF4EF13722D1E153007CC9AF /* MainNavigationController.swift in Sources */,
 				DF4EF14422D1E571007CC9AF /* ConversationController+Search.swift in Sources */,
 				DFB111AE22BA53E300A802FF /* ConversationViewController.swift in Sources */,
+				DF937D1922DB2346000CAA60 /* ConversationListViewModel.swift in Sources */,
 				DF4EF14722D1E5B0007CC9AF /* ConversationController+View.swift in Sources */,
+				DF937D1D22DB23E6000CAA60 /* ConversationController+ListViewModelProtocol.swift in Sources */,
+				DF937D1B22DB239D000CAA60 /* ConversationListViewModelProtocol.swift in Sources */,
 				DFB111AC22BA53E300A802FF /* AppDelegate.swift in Sources */,
 				DF4EF13B22D1E2D7007CC9AF /* ConversationSearchResultController.swift in Sources */,
 				DF4EF15122D1EA93007CC9AF /* ConversationTableViewCell.swift in Sources */,

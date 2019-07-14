@@ -9,25 +9,32 @@
 import Foundation
 import UIKit
 
-extension ConversationViewController {
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return conversations.count
+extension ConversationViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return conversationListViewModel.conversationsCount
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ConversationTableViewCell", for: indexPath) as! ConversationTableViewCell
-        let conversation = conversations[indexPath.row]
+        let conversation = conversationListViewModel.getConversation(at: indexPath.row)
         
-        cell.lableUsername.text = conversation
-        cell.lableTime.text = conversation
-        cell.lableRecentContent.text = conversation
+        cell.lableUsername.text = conversation.username
+        cell.lableTime.text = conversation.time
+        cell.lableRecentContent.text = conversation.recentMessage
         
         return cell
     }
+}
+
+extension ConversationViewController: UITableViewDelegate {
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
     }
     
 }
+

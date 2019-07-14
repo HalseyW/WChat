@@ -8,16 +8,25 @@
 
 import UIKit
 
-class ConversationViewController: UITableViewController {
-    var conversations = ["1", "2", "3", "4", "5", "6"]
-    var searchController: UISearchController!
+class ConversationViewController: UIViewController {
+    var conversationListViewModel = ConversationListViewModel()
 
+    let tableView = UITableView()
+    var viewEmptyList: UIView!
+    var searchController: UISearchController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         initView()
+        
+        conversationListViewModel.delegate = self
+        conversationListViewModel.loadConversations()
+        
     }
 
 }
+
 
 
 
